@@ -119,3 +119,6 @@ def display_answer_value(question_index):
     correct_answer_value = question['correct_answer']
     print(f'Option {correct_answer_option}, '
           f'{correct_answer_value} is correct. Awesome!')
+
+
+introduction()
