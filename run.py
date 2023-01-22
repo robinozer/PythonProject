@@ -94,7 +94,10 @@ def check_user_answer(question_index, user_selection):
 
 
 def display_next_question(question_index):
-    
+    # Retrieves the subsequent question from the list and prints it out.
+    question = QUESTIONS[question_index]
+    print(question['question'])
+    print(question['options'])
 
 def display_correct_answer()
 
