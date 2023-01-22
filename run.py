@@ -99,6 +99,14 @@ def display_next_question(question_index):
     print(question['question'])
     print(question['options'])
 
-def display_correct_answer()
+def display_correct_answer(question_index):
+    # Alerts player of wrong answer,
+    # and prints out the correct answer.
+    question = QUESTIONS[question_index]
+    correct_answer_value = question['correct_answer']
+    correct_answer_option = question['correct_option']
+    print(f'Oops, that is wrong. '
+          f'The correct answer is option'
+          f' {correct_answer_option}, {correct_answer_value}.')
 
-def display_answer_value()
+def display_answer_value(question_index)
