@@ -46,7 +46,32 @@ def introduction():
     input('Press Enter to start the quiz.\n')
     main()  # initializes the quiz
 
-def main()
+def main():
+    """ 
+    Central function:
+    Displays questions and answer options from list index.
+    Confirms player's choice, and checks whether the answer is correct.
+    Increments player's score if correct.
+    If incorrect, it displays the correct answer to the player.
+    Displays final score at the end of game.
+    """
+    score = 0
+    question_index = 0
+    while question_index < len(QUESTIONS):
+        display_next_question(question_index)
+        user_input = get_user_input()
+        print(f'You selected option {user_input}')
+        is_correct = check_user_answer(question_index, user_input)
+        if is_correct:
+            score += 1
+            display_answer_value(question_index)
+        else:
+            display_correct_answer(question_index)
+        print(f'Your score is: {score}\n')
+        input('Press Enter to continue\n')
+        question_index += 1
+    print('Quiz ended. Well done! Your final score is: ' + str(score))
+
 
 def get_user_input()
 
