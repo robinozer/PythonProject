@@ -49,7 +49,7 @@ def introduction():
 
 
 def main():
-    """ 
+    """
     Central function:
     Displays questions and answer options from list index.
     Confirms player's choice, and checks whether the answer is correct.
@@ -99,6 +99,7 @@ def display_next_question(question_index):
     print(question['question'])
     print(question['options'])
 
+
 def display_correct_answer(question_index):
     # Alerts player of wrong answer,
     # and prints out the correct answer.
@@ -109,4 +110,12 @@ def display_correct_answer(question_index):
           f'The correct answer is option'
           f' {correct_answer_option}, {correct_answer_value}.')
 
-def display_answer_value(question_index)
+
+def display_answer_value(question_index):
+    # When player chooses right answer, the answer is printed out.
+    # e.g. Option 1 Brown is correct.
+    question = QUESTIONS[question_index]
+    correct_answer_option = question['correct_option']
+    correct_answer_value = question['correct_answer']
+    print(f'Option {correct_answer_option}, '
+          f'{correct_answer_value} is correct. Awesome!')
