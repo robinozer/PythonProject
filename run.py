@@ -32,3 +32,17 @@ QUESTIONS = [
         'correct_answer': 'Brown'
     }
 ]
+
+def introduction()
+
+def main()
+
+def get_user_input()
+
+def check_user_answer()
+
+def display_next_question()
+
+def display_correct_answer()
+
+def display_answer_value()
