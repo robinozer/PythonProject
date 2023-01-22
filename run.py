@@ -33,6 +33,7 @@ QUESTIONS = [
     }
 ]
 
+
 def introduction():
     # Introduces the player to the game and explains the rules
     intro_name = input("Hi there! Please enter your name.\n")
@@ -45,6 +46,7 @@ def introduction():
         )
     input('Press Enter to start the quiz.\n')
     main()  # initializes the quiz
+
 
 def main():
     """ 
@@ -73,7 +75,15 @@ def main():
     print('Quiz ended. Well done! Your final score is: ' + str(score))
 
 
-def get_user_input()
+def get_user_input():
+    # Receives and validates user input for answering questions.
+    is_user_input_invalid = True
+    while is_user_input_invalid:
+        user_input = input('Please enter a value between 1-4\n')
+        if user_input in ['1', '2', '3', '4']:
+            return user_input
+        else:
+            print('Invalid option, please re-enter')
 
 def check_user_answer()
 
