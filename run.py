@@ -85,9 +85,16 @@ def get_user_input():
         else:
             print('Invalid option, please re-enter')
 
-def check_user_answer()
 
-def display_next_question()
+def check_user_answer(question_index, user_selection):
+    # Returns a boolean: true if the player´s option is the same as
+    # the correct answer, and false if it isn't
+    question = QUESTIONS[question_index]
+    return question['correct_option'] == user_selection
+
+
+def display_next_question(question_index):
+    
 
 def display_correct_answer()
 
