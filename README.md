@@ -49,32 +49,6 @@ __Final Result__
 
 - Both questions and answer options could be randomized to increase difficulty.
 - A larger library of questions and answers could be added to create a quiz with variation.
-- For the application to be able to handle a larger amount of questions easily, the model would need to be rebuilt to e.g. use class instead of the current list, as these may become difficult to maintain at length. That could look something like this:
-
-```
-class Question:
-    def __init__(self, question, options, correct_option):
-        self.question = question
-        self.options = options
-        self.correct_option = correct_option
-    
-    def display(self):
-        print(self.question)
-        print(self.options)
-    
-    def check_answer(user_input):
-        return self.correct_option == user_input
-```
-
-- The question bank could then be modeled like this:
-```
-class QuestionBank:
-    def __init__(self, questions):
-        self.questions = []
-    
-    def add_question(question):
-        self.questions.append(question)
-```
 
 ## Technology ##
 - [GitPod](https://gitpod.io/) was used to write, edit and commit the code, while [GitHub](https://github.com/) was used for deployment, storage and version control.
@@ -89,6 +63,7 @@ class QuestionBank:
 
 ### Manual testing ###
 I have manually tested this project by doing the following:
+- Run the code through pylint using the terminal and received a rating of 10/10.
 - Entered invalid inputs as question answers (pressing Enter without any input, entering invalid numerals, entering letters and entering empty space) several times over.
 - Used PEP8 Python validator and returned the code with no errors.
 - Tested the code in my local terminal as well as the Heroku terminal.
@@ -147,7 +122,7 @@ I have manually tested this project by doing the following:
 
 ### Fixed bugs ###
 
-- In the early developent of the game, I tried a number of different lists and dictionaries to store my questions and answers. The first one shown below has the question as the key and the answer options in a list as the value. This proved to be a rudimentary model that needed a for loop to display the questions. Also, it would get messy very quickly if more questions were added to the quiz, as there was no sustainable way to index the questions.
+- In the early developent of the game, I tried a number of different lists and dictionaries to store my questions and answers. The first one shown below has the question as the key and the answer options in a list as the value. This proved to be a rudimentary model as there was no sustainable way to index the questions.
 
 ```
 QUESTIONS = {
@@ -155,7 +130,7 @@ QUESTIONS = {
         "Yellow", "Green", "Red", "Orange"
     ],
 ```
-- This was followed by a far more sophisticated model shown below. The model, when used, threw close to 80 errors in GitPod and ultimately proved to be too complex for me to work with at this stage. However, I recognize that it is built to handle a very large data set while keeping things organized. In this sense it is similar to the classes shown in the future features section.
+- This was followed by a more sophisticated model shown below. The model proved to be too complex for me to work with at this stage as there were numerous syntax errors in GitPod.
 
 ```
 OptionItem: {
@@ -191,8 +166,7 @@ Github Pages was used to deploy the website. The following steps were used:
 - Wait a moment and refresh the page to find a box with the live URL. The website is now deployed.
 
 ## Credits ##
-
-### Content ###
+No content was borrowed in building this project.
 
 
 
@@ -211,10 +185,3 @@ You must then create a _Config Var_ called `PORT`. Set this to `8000`
 If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
 Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
