@@ -33,7 +33,18 @@ QUESTIONS = [
     }
 ]
 
-def introduction()
+def introduction():
+    # Introduces the player to the game and explains the rules
+    intro_name = input("Hi there! Please enter your name.\n")
+    print(
+        f'Hello {intro_name}, welcome to this Python Quiz.\n'
+        f'There are five questions in total.\n'
+        f'Each question has four answer options.\n'
+        f'You get one point for each correct answer.\n'
+        f'Good luck {intro_name}!\n'
+        )
+    input('Press Enter to start the quiz.\n')
+    main()  # initializes the quiz
 
 def main()
 
