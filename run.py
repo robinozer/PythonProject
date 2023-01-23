@@ -40,13 +40,12 @@ def introduction():
     """
     Introduces the player to the game and explains the rules
     """
-    intro_name = input("Hi there! Please enter your name.\n")
     print(
-        f'Hello {intro_name}, welcome to this Python Quiz.\n'
-        f'There are five questions in total.\n'
-        f'Each question has four answer options.\n'
-        f'You get one point for each correct answer.\n'
-        f'Good luck {intro_name}!\n'
+        'Hi there! Welcome to this Python Quiz.\n'
+        'There are five questions in total.\n'
+        'Each question has four answer options.\n'
+        'You get one point for each correct answer.\n'
+        'Good luck!\n'
         )
     input('Press Enter to start the quiz.\n')
     main()  # initializes the quiz
@@ -58,7 +57,8 @@ def main():
     Displays questions and answer options from list index.
     Confirms player's choice, and checks whether the answer is correct.
     Increments player's score if correct.
-    If incorrect, it displays the correct answer to the player.
+    If incorrect, displays the correct answer to the player.
+    Moves on to the next question.
     Displays final score at the end of game.
     """
     score = 0
@@ -88,7 +88,7 @@ def get_user_input():
         user_input = input('Please enter a value between 1-4\n')
         if user_input in ['1', '2', '3', '4']:
             return user_input
-    print('Invalid option, please re-enter')
+        print('Invalid option, please re-enter')
 
 
 def check_user_answer(question_index, user_selection):

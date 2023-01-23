@@ -51,7 +51,9 @@ __Final Result__
 - A larger library of questions and answers could be added to create a quiz with variation.
 
 ## Technology ##
-- [GitPod](https://gitpod.io/) was used to write, edit and commit the code, while [GitHub](https://github.com/) was used for deployment, storage and version control.
+- [GitPod](https://gitpod.io/) was used to write, edit and commit the code, [GitHub](https://github.com/) was used for storage and version control.
+- [PyCharm](https://www.jetbrains.com/pycharm/) was used to write and test the game in early development.
+- [Heroku](https://www.heroku.com/) was used for deployment and testing.
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to create screenshot of website on different screen sizes.
 
 ## Testing ##
@@ -165,6 +167,8 @@ Heroku was used to deploy the website. The following steps were used:
 - In Buildpacks, click 'Add buildpack' and select python, and then node.js, saving changes after each.
 
 - Go to the Deploy tab, select GitHub as the Deployment Method, and confirm.
+- Search for the repository name and connect.
+- Deploy the branch.
 
 ## Credits ##
 No content was borrowed in building this project.
