@@ -55,28 +55,30 @@ __End of game__
 ## Testing ##
 
 ### Code validation ###
-- No errors were returned when passing the Python code through the [PEP8 Python Validator](https://pep8ci.herokuapp.com/)
+- No errors were returned when passing the Python code through the [PEP8 Python Linter](https://pep8ci.herokuapp.com/)
 
-![SCREENSHOT OF PYTHON VALIDATION](media/html-validation.png)
+![SCREENSHOT OF PYTHON VALIDATION](media/screenshot-python-linter.png)
 
 ### Manual testing ###
 I have manually tested this project by doing the following:
 - Run the code through pylint using the terminal and received a rating of 10/10.
 - Entered invalid inputs as question answers (pressing Enter without any input, entering invalid numerals, entering letters and entering empty space) several times over.
-- Used PEP8 Python validator and returned the code with no errors.
+- Used PEP8 Python validator and returned the code with no errors. Some comments regarding indentation were ignored as the validator did not recognize multi-line print statements.
 - Tested the code in my local terminal as well as the Heroku terminal.
 
 ### Test cases ###
 
 #### Quiz Introduction ####
 
-- Testing performed: enter my name and press Enter.
+- Testing performed: enter the URL of deployed page and click Run Program.
 
 - Expected outcome: displays welcome message with instructions on how to play the quiz, and a prompt to press Enter to start.
 
 - Result: as expected.
 
 - Test passed.
+
+![SCREENSHOT OF QUIZ INTRODUCTION](media/screenshot-introduction.png)
 
 #### Quiz Start ####
 
@@ -88,7 +90,10 @@ I have manually tested this project by doing the following:
 
 - Test passed.
 
-#### Answer question correctly ####
+
+![SCREENSHOT OF QUIZ START](media/screenshot-start-quiz.png)
+
+#### Enter valid answer option ####
 
 - Testing performed: entering a valid number when answering a question (1-4).
 
@@ -98,15 +103,21 @@ I have manually tested this project by doing the following:
 
 - Test passed.
 
-#### Answer question incorrectly ####
+![SCREENSHOT OF VALID ANSWERS, THIS ONE INCORRECT](media/screenshot-valid-incorrect-answer.png)
 
-- Testing performed: entering a invalid character (letter S) when answering a question.
+![SCREENSHOT OF VALID ANSWERS, THIS ONE CORRECT](media/screenshot-valid-correct-answer.png)
+
+#### Enter invalid answer option ####
+
+- Testing performed: entering a invalid character (e.g. letter S) when answering a question.
 
 - Expected outcome: alert message prompting me to re-enter a valid answer option.
 
 - Result: as expected.
 
 - Test passed.
+
+![SCREENSHOT OF INVALID ANSWER](media/screenshot-invalid-answer.png)
 
 #### End of quiz ####
 
@@ -117,6 +128,8 @@ I have manually tested this project by doing the following:
 - Result: as expected.
 
 - Test passed.
+
+![SCREENSHOT OF QUIZ END](media/screenshot-end-quiz.png)
 
 ### Fixed bugs ###
 

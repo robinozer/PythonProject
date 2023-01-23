@@ -46,7 +46,7 @@ def introduction():
         'Each question has four answer options.\n'
         'You get one point for each correct answer.\n'
         'Good luck!\n'
-        )
+    )
     input('Press Enter to start the quiz.\n')
     main()  # initializes the quiz
 
