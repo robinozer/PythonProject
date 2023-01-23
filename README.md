@@ -1,11 +1,11 @@
 # Python Colors Quiz #
 
 ## Purpose of the project ##
-The Python Colors Quiz is for anyone curious about unusual shades of colors that we all know and recognize. The quiz can be used for educational as well as recreational purposes. To introduce a competitive element, the quiz counts the player's score and displays the final score at the end.
+The Python Colors Quiz is for anyone curious about unusual shades of regular colors that we all know and recognize. The quiz can be used for educational as well as recreational purposes. To introduce a competitive element, the quiz counts the player's score and displays the final score at the end.
 
-The purpose of this project is to use HTML, CSS and JavaScript to create a website with interactive elements, in this case a quiz game. The website is responsive on mobile, computer and tablet size screens.
+The quiz game is responsive on mobile, computer and tablet size screens.
 
-![SCREENSHOT OF RESPONSIVE SCREENS](media/screenshot-responsive.png)
+![SCREENSHOT OF RESPONSIVE SCREENS](media/screenshot-responsive-screens.png)
 
 ## How to play ##
 The player begins by entering their name and receiving written instructions on how to play the quiz. Upon pressing Enter, the quiz commences.
@@ -45,12 +45,14 @@ __End of game__
 - Both questions and answer options could be randomized to increase difficulty.
 - A larger library of questions and answers could be added to create a quiz with variation.
 
+
 ## Technology ##
 - [GitPod](https://gitpod.io/) was used to write, edit and commit the code, [GitHub](https://github.com/) was used for storage and version control.
 - [PyCharm](https://www.jetbrains.com/pycharm/) was used to write and test the game in early development.
 - [Heroku](https://www.heroku.com/) was used for deployment and testing.
 - [Lucidchart](https://www.lucidchart.com/pages/) was used to create a flowchart of the project.
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to create screenshot of website on different screen sizes.
+
 
 ## Testing ##
 
@@ -109,7 +111,7 @@ I have manually tested this project by doing the following:
 
 #### Enter invalid answer option ####
 
-- Testing performed: entering a invalid character (e.g. letter S) when answering a question.
+- Testing performed: entering an invalid character (e.g. letter S) when answering a question.
 
 - Expected outcome: alert message prompting me to re-enter a valid answer option.
 
@@ -133,7 +135,7 @@ I have manually tested this project by doing the following:
 
 ### Fixed bugs ###
 
-- In the early developent of the game, I tried a number of different lists and dictionaries to store my questions and answers. The first one shown below has the question as the key and the answer options in a list as the value. This proved to be a rudimentary model as there was no sustainable way to index the questions.
+- In the early development of the game, I tried a number of different lists and dictionaries to store my questions and answers. The first one shown below has the question as the key and the answer options in a list as the value. This proved to be a rudimentary model as there was no sustainable way to index the questions.
 
 ```
 QUESTIONS = {
@@ -161,13 +163,13 @@ QuestionList: [QuestionItem]
 ## Deployment ##
 
 ### Via GitPod ###
-The GitHub repository was created using the Code Institute GitPod template:
-https://github.com/Code-Institute-Org/gitpod-full-template
+The GitHub repository was created using the Code Institute Python Essentials template:
+https://github.com/Code-Institute-Org/python-essentials-template
 - Click the link to get to the template. Click “Use this template”.
-- Enter repository name, QuizProject, make the repository is public and click “Create repository from template”.
+- Enter repository name, make the repository public and click “Create repository from template”.
 - Click the green GitPod button, wait a moment for the workspace to open. All work was committed in GitPod.
 
-- The repository can be accessed through following link: https://github.com/robinozer/QuizProject.git 
+- The repository can be accessed through following link: https://github.com/robinozer/PythonProject.git
 
 ### Via Heroku ###
 Heroku was used to deploy the website. The following steps were used:
@@ -180,4 +182,4 @@ Heroku was used to deploy the website. The following steps were used:
 - Deploy the branch.
 
 ## Credits ##
-No content was borrowed in building this project.
+- CI for the deployment terminal.
