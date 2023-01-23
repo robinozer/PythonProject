@@ -158,30 +158,13 @@ https://github.com/Code-Institute-Org/gitpod-full-template
 
 - The repository can be accessed through following link: https://github.com/robinozer/QuizProject.git 
 
-### Via GitHub Pages ###
-Github Pages was used to deploy the website. The following steps were used:
-- In GitHub, navigate to the repository and find the Settings tab at the top menu.
-- Click on Pages in the left hand Menu.
-- In “Build and deployment”, go to Branch, select main, and save.
-- Wait a moment and refresh the page to find a box with the live URL. The website is now deployed.
+### Via Heroku ###
+Heroku was used to deploy the website. The following steps were used:
+- After creating an account, create a new app and navigate to the Settings tab.
+- In Config Vars, click 'Reveal Config Vars' and add one with key 'PORT' and value '8000'.
+- In Buildpacks, click 'Add buildpack' and select python, and then node.js, saving changes after each.
+
+- Go to the Deploy tab, select GitHub as the Deployment Method, and confirm.
 
 ## Credits ##
 No content was borrowed in building this project.
-
-
-
-
-
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
