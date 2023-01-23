@@ -18,32 +18,27 @@ When all questions have been answered, the player is congratulated and informed 
 
 ## Features ##
 
-__Header__
--	X
+![SCREENSHOT OF FLOWCHART](media/flowchart-python-quiz.png)
+
+__Introduction to game__
+-	Welcomes the player and explains the rules.
+
+__Display question and answer options__
+-	Shows question and numerated answers.
+-   Prompts user to input valid answer option.
 
 __Input validation and checking error__
 -	Player must enter a valid choice, a number between 1-4.
--   If any other characters are entered, the game asks the player to re-enter their answer as it is invalid.
+-   If any other characters are entered, the game asks the player to re-enter.
 
+__Score incrementation__
+-	If the submitted answer is correct, the score increments by 1.
+-   If incorrect, the correct answer is displayed.
+-   Press Enter to continue to the next question.
 
-![SCREENSHOT OF QUIZ INTERFACE WITH ANSWER OPTIONS](media/screenshot-quiz-options.png)
+__End of game__
+-	When all questions have been answered, the player's final score is displayed.
 
-- Once the Submit button has been clicked, the user is no longer able to change the answer, as the buttons are disabled. The correct answer option is shown in green. If the user's answer choice was incorrect, it will be shown in red.
-- There is also a message below the questions alerting the user when an answer is correct or incorrect, and instructing the user to click Next.
-- The score counter below increments with 1 when the submitted answer is correct.
-- Clicking the Submit button also displays the Next button, giving the user the opportunity to re-read the question and their answers before moving on to the next question. This is also for educational purposes.
-
-![SCREENSHOT OF SUBMITTED INCORRECT ANSWER](media/screenshot-answer-wrong.png)
-
-- The image below shows what the quiz interface looks like when a user answers a question correctly.
-
-![SCREENSHOT OF SUBMITTED CORRECT ANSWER](media/screenshot-answer-correct.png)
-
-__Final Result__
-
-- When all questions have been answered, an encouraging message is displayed along with the user's final score.
-
-![SCREENSHOT OF QUiZ END](media/screenshot-quiz-end.png)
 
 ## Future features ##
 
@@ -54,6 +49,7 @@ __Final Result__
 - [GitPod](https://gitpod.io/) was used to write, edit and commit the code, [GitHub](https://github.com/) was used for storage and version control.
 - [PyCharm](https://www.jetbrains.com/pycharm/) was used to write and test the game in early development.
 - [Heroku](https://www.heroku.com/) was used for deployment and testing.
+- [Lucidchart](https://www.lucidchart.com/pages/) was used to create a flowchart of the project.
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to create screenshot of website on different screen sizes.
 
 ## Testing ##
