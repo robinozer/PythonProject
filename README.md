@@ -8,6 +8,8 @@ The quiz game is responsive on mobile, computer and tablet size screens.
 ![SCREENSHOT OF RESPONSIVE SCREENS](media/screenshot-responsive-screens.png)
 
 ## How to play ##
+LIVE LINK TO THE GAME: https://pythonproject-3097a555d961.herokuapp.com/
+
 The player begins by entering their name and receiving written instructions on how to play the quiz. Upon pressing Enter, the quiz commences.
 
 The quiz contains multiple choice questions with four answer options per question. The player can choose one answer only, and receives one point for each correct answer. 
